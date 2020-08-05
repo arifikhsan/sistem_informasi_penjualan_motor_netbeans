@@ -60,7 +60,7 @@ public class PurchaseRepositoryImpl implements PurchaseRepository {
         try {
             resultSet = statement.executeQuery("SELECT " +
                     "penjualan.id AS id, pembeli.id AS id_pembeli, pembeli.nama AS nama_pembeli, " +
-                    "motor.id AS id_motor, motor.nama AS nama_motor, penjualan.tanggal_sewa, sewa.tanggal_kembali " +
+                    "motor.id AS id_motor, motor.nama AS nama_motor, penjualan.tanggal " +
                     "FROM penjualan " +
                     "INNER JOIN motor ON penjualan.motor_id = motor.id " +
                     "INNER JOIN pembeli ON penjualan.pembeli_id = pembeli.id " +

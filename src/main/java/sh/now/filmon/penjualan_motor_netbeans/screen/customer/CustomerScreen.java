@@ -9,6 +9,7 @@ import sh.now.filmon.penjualan_motor_netbeans.model.Customer;
 import sh.now.filmon.penjualan_motor_netbeans.repository.CustomerRepositoryImpl;
 import sh.now.filmon.penjualan_motor_netbeans.repository.contract.CustomerRepository;
 import sh.now.filmon.penjualan_motor_netbeans.screen.contract.ScreenInterface;
+import sh.now.filmon.penjualan_motor_netbeans.screen.dashboard.DashboardScreen;
 
 import javax.swing.*;
 

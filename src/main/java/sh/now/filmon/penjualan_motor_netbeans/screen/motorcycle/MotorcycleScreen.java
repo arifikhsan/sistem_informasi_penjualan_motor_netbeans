@@ -5,17 +5,37 @@
  */
 package sh.now.filmon.penjualan_motor_netbeans.screen.motorcycle;
 
+import sh.now.filmon.penjualan_motor_netbeans.model.Motorcycle;
+import sh.now.filmon.penjualan_motor_netbeans.repository.MotorcycleRepositoryImpl;
+import sh.now.filmon.penjualan_motor_netbeans.repository.contract.MotorcycleRepository;
+import sh.now.filmon.penjualan_motor_netbeans.screen.contract.ScreenInterface;
+
+import javax.swing.*;
+
 /**
  *
  * @author arifikhsanudin
  */
-public class MotorcycleScreen extends javax.swing.JFrame {
+public class MotorcycleScreen extends javax.swing.JFrame implements ScreenInterface {
+    public Integer motorcycleId;
+    MotorcycleRepository repository = new MotorcycleRepositoryImpl();
 
     /**
      * Creates new form MotorcycleScreen
      */
+    
     public MotorcycleScreen() {
+        init();
+    }
+    
+    public MotorcycleScreen(Integer motorcycleId) {
+        this.motorcycleId = motorcycleId;
+        init();
+    }
+    
+    void init() {
         initComponents();
+        populateView();
     }
 
     /**
@@ -27,21 +47,124 @@ public class MotorcycleScreen extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        labelId = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        textFieldName = new javax.swing.JTextField();
+        textFieldPoliceNumber = new javax.swing.JTextField();
+        textFieldPrice = new javax.swing.JTextField();
+        buttonSave = new javax.swing.JButton();
+        labelTitle = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        labelId.setText("Id");
+
+        jLabel3.setText("Nama");
+
+        jLabel4.setText("Nomor polisi");
+
+        jLabel5.setText("Harga");
+
+        buttonSave.setText("Simpan");
+        buttonSave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonSaveActionPerformed(evt);
+            }
+        });
+
+        labelTitle.setFont(new java.awt.Font("Gilroy Light", 1, 24)); // NOI18N
+        labelTitle.setForeground(new java.awt.Color(0, 102, 255));
+        labelTitle.setText("Motor");
+
+        jButton1.setText("Keluar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setText("Id");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(labelTitle)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(buttonSave)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jButton1))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel1)
+                                .addComponent(jLabel3)
+                                .addComponent(jLabel4)
+                                .addComponent(jLabel5))
+                            .addGap(23, 23, 23)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(labelId)
+                                .addComponent(textFieldName, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                                .addComponent(textFieldPoliceNumber)
+                                .addComponent(textFieldPrice)))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(labelTitle)
+                .addGap(30, 30, 30)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(labelId))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(textFieldName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(textFieldPoliceNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(textFieldPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(27, 27, 27)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(buttonSave))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void buttonSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSaveActionPerformed
+        if (isEdit()) {
+            int dialogResult = JOptionPane.showConfirmDialog(null, "Update?", "Peringatan", JOptionPane.YES_NO_OPTION);
+            if (dialogResult == JOptionPane.YES_OPTION) {
+                repository.update(new Motorcycle(Integer.parseInt(labelId.getText()), textFieldName.getText(), textFieldPoliceNumber.getText(), Integer.parseInt(textFieldPrice.getText())));
+            }
+        } else {
+            int dialogResult = JOptionPane.showConfirmDialog(null, "Tambah baru?", "Peringatan", JOptionPane.YES_NO_OPTION);
+            if (dialogResult == JOptionPane.YES_OPTION) {
+                repository.add(new Motorcycle(textFieldName.getText(), textFieldPoliceNumber.getText(), Integer.parseInt(textFieldPrice.getText())));
+            }
+        }
+        this.setVisible(false);
+    }//GEN-LAST:event_buttonSaveActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +202,33 @@ public class MotorcycleScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton buttonSave;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel labelId;
+    private javax.swing.JLabel labelTitle;
+    private javax.swing.JTextField textFieldName;
+    private javax.swing.JTextField textFieldPoliceNumber;
+    private javax.swing.JTextField textFieldPrice;
+
     // End of variables declaration//GEN-END:variables
+    
+    
+    @Override
+    public void populateView() {
+        if (isEdit()) {
+            Motorcycle motorcycle = repository.getOne(motorcycleId);
+            labelId.setText(motorcycle.getId().toString());
+            textFieldName.setText(motorcycle.getName());
+            textFieldPoliceNumber.setText(motorcycle.getPoliceNumber());
+            textFieldPrice.setText(motorcycle.getPrice().toString());
+        }
+    }
+
+    private boolean isEdit() {
+        return motorcycleId != null;
+    }
 }

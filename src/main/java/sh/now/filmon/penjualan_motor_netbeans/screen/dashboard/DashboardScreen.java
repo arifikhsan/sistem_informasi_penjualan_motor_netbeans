@@ -13,6 +13,7 @@ import sh.now.filmon.penjualan_motor_netbeans.repository.contract.MotorcycleRepo
 import sh.now.filmon.penjualan_motor_netbeans.repository.contract.PurchaseRepository;
 import sh.now.filmon.penjualan_motor_netbeans.screen.contract.ScreenInterface;
 import sh.now.filmon.penjualan_motor_netbeans.screen.customer.CustomerScreen;
+import sh.now.filmon.penjualan_motor_netbeans.screen.motorcycle.MotorcycleScreen;
 import sh.now.filmon.penjualan_motor_netbeans.screen.purchase.PurchaseScreen;
 
 import javax.swing.*;
@@ -406,35 +407,35 @@ public class DashboardScreen extends javax.swing.JFrame implements ScreenInterfa
     }//GEN-LAST:event_buttonExitActionPerformed
 
     private void buttonMotorcycleAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMotorcycleAddActionPerformed
-//        new MotorcycleScreen().setVisible(true);
+        new MotorcycleScreen().setVisible(true);
     }//GEN-LAST:event_buttonMotorcycleAddActionPerformed
 
     private void buttonMotorcycleViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMotorcycleViewActionPerformed
         Integer motorcycleId = Integer.parseInt(tableMotorcycle.getValueAt(tableMotorcycle.getSelectedRow(), 0).toString());
-//        new MotorcycleScreen(motorcycleId).setVisible(true);
+        new MotorcycleScreen(motorcycleId).setVisible(true);
     }//GEN-LAST:event_buttonMotorcycleViewActionPerformed
 
     private void buttonMotorcycleDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMotorcycleDeleteActionPerformed
         Integer motorcycleId = Integer.parseInt(tableMotorcycle.getValueAt(tableMotorcycle.getSelectedRow(), 0).toString());
-//        int dialogResult = JOptionPane.showConfirmDialog(null, "Hapus?", "Peringatan", JOptionPane.YES_NO_OPTION);
-//        if (dialogResult == JOptionPane.YES_OPTION) {
-//            motorcycleRepository.delete(motorcycleId);
-//            populateTableMotorcycle();
-//        }
+        int dialogResult = JOptionPane.showConfirmDialog(null, "Hapus?", "Peringatan", JOptionPane.YES_NO_OPTION);
+        if (dialogResult == JOptionPane.YES_OPTION) {
+            motorcycleRepository.delete(motorcycleId);
+            populateTableMotorcycle();
+        }
     }//GEN-LAST:event_buttonMotorcycleDeleteActionPerformed
 
     private void buttonPurchaseDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonPurchaseDeleteActionPerformed
         Integer purchaseId = Integer.parseInt(tablePurchase.getValueAt(tablePurchase.getSelectedRow(), 0).toString());
-//        int dialogResult = JOptionPane.showConfirmDialog(null, "Hapus?", "Peringatan", JOptionPane.YES_NO_OPTION);
-//        if (dialogResult == JOptionPane.YES_OPTION) {
-//            purchaseRepository.delete(purchaseId);
-//            populateTablePurchase();
-//        }
+        int dialogResult = JOptionPane.showConfirmDialog(null, "Hapus?", "Peringatan", JOptionPane.YES_NO_OPTION);
+        if (dialogResult == JOptionPane.YES_OPTION) {
+            purchaseRepository.delete(purchaseId);
+            populateTablePurchase();
+        }
     }//GEN-LAST:event_buttonPurchaseDeleteActionPerformed
 
     private void buttonPurchaseViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonPurchaseViewActionPerformed
         Integer purchaseId = Integer.parseInt(tablePurchase.getValueAt(tablePurchase.getSelectedRow(), 0).toString());
-//        new PurchaseScreen(purchaseId).setVisible(true);
+        new PurchaseScreen(purchaseId).setVisible(true);
     }//GEN-LAST:event_buttonPurchaseViewActionPerformed
 
     /**
