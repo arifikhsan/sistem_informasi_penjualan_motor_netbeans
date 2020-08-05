@@ -31,41 +31,41 @@
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="refreshAll" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                      <Component id="refreshRental" min="-2" max="-2" attributes="0"/>
+                      <Component id="refreshPurchase" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="buttonRentalAdd" min="-2" max="-2" attributes="0"/>
+                      <Component id="buttonPurchaseAdd" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="buttonRentalView" min="-2" max="-2" attributes="0"/>
+                      <Component id="buttonPurchaseView" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="buttonRentalDelete" min="-2" max="-2" attributes="0"/>
+                      <Component id="buttonPurchaseDelete" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" attributes="0">
                               <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
-                              <Component id="buttonCarAdd" min="-2" max="-2" attributes="0"/>
+                              <Component id="buttonMotorcycleAdd" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="buttonCarView" min="-2" max="-2" attributes="0"/>
+                              <Component id="buttonMotorcycleView" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="buttonCarDelete" min="-2" max="-2" attributes="0"/>
+                              <Component id="buttonMotorcycleDelete" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Component id="jScrollPane2" alignment="1" min="-2" pref="359" max="-2" attributes="0"/>
-                          <Component id="refreshCar" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="refreshMotorcycle" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="buttonUserAdd" min="-2" max="-2" attributes="0"/>
+                              <Component id="buttonCustomerAdd" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="buttonUserView" min="-2" max="-2" attributes="0"/>
+                              <Component id="buttonCustomerView" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="buttonUserDelete" min="-2" max="-2" attributes="0"/>
+                              <Component id="buttonCustomerDelete" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Component id="jScrollPane3" alignment="1" min="-2" pref="359" max="-2" attributes="0"/>
-                          <Component id="refreshUser" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="refreshCustomer" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" attributes="0">
@@ -95,11 +95,11 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="buttonRentalDelete" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="buttonRentalView" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="buttonRentalAdd" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="buttonPurchaseDelete" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="buttonPurchaseView" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="buttonPurchaseAdd" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="refreshAll" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="refreshRental" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="refreshPurchase" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="138" max="-2" attributes="0"/>
@@ -107,24 +107,24 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="buttonCarDelete" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="buttonCarView" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="buttonCarAdd" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="buttonUserDelete" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="buttonUserView" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="buttonUserAdd" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="buttonMotorcycleDelete" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="buttonMotorcycleView" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="buttonMotorcycleAdd" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="buttonCustomerDelete" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="buttonCustomerView" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="buttonCustomerAdd" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="jScrollPane2" min="-2" pref="120" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="refreshCar" min="-2" max="-2" attributes="0"/>
+                      <Component id="refreshMotorcycle" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="jScrollPane3" min="-2" pref="120" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="refreshUser" min="-2" max="-2" attributes="0"/>
+                      <Component id="refreshCustomer" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
@@ -152,12 +152,12 @@
         <Property name="text" type="java.lang.String" value="Pembelian"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="buttonRentalAdd">
+    <Component class="javax.swing.JButton" name="buttonPurchaseAdd">
       <Properties>
         <Property name="text" type="java.lang.String" value="Tambah"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonRentalAddActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonPurchaseAddActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
@@ -168,12 +168,12 @@
         <Property name="text" type="java.lang.String" value="Motor"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="refreshUser">
+    <Component class="javax.swing.JButton" name="refreshCustomer">
       <Properties>
         <Property name="text" type="java.lang.String" value="Refresh"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="refreshUserActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="refreshCustomerActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
@@ -184,38 +184,38 @@
         <Property name="text" type="java.lang.String" value="Pembeli"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="refreshCar">
+    <Component class="javax.swing.JButton" name="refreshMotorcycle">
       <Properties>
         <Property name="text" type="java.lang.String" value="Refresh"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="refreshCarActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="refreshMotorcycleActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="buttonUserDelete">
+    <Component class="javax.swing.JButton" name="buttonCustomerDelete">
       <Properties>
         <Property name="text" type="java.lang.String" value="Hapus"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonUserDeleteActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonCustomerDeleteActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="refreshRental">
+    <Component class="javax.swing.JButton" name="refreshPurchase">
       <Properties>
         <Property name="text" type="java.lang.String" value="Refresh"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="refreshRentalActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="refreshPurchaseActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="buttonUserView">
+    <Component class="javax.swing.JButton" name="buttonCustomerView">
       <Properties>
         <Property name="text" type="java.lang.String" value="Lihat"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonUserViewActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonCustomerViewActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="refreshAll">
@@ -226,12 +226,12 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="refreshAllActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="buttonUserAdd">
+    <Component class="javax.swing.JButton" name="buttonCustomerAdd">
       <Properties>
         <Property name="text" type="java.lang.String" value="Tambah"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonUserAddActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonCustomerAddActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="buttonExit">
@@ -242,30 +242,30 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonExitActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="buttonCarAdd">
+    <Component class="javax.swing.JButton" name="buttonMotorcycleAdd">
       <Properties>
         <Property name="text" type="java.lang.String" value="Tambah"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonCarAddActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonMotorcycleAddActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="buttonCarView">
+    <Component class="javax.swing.JButton" name="buttonMotorcycleView">
       <Properties>
         <Property name="text" type="java.lang.String" value="Lihat"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonCarViewActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonMotorcycleViewActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="buttonCarDelete">
+    <Component class="javax.swing.JButton" name="buttonMotorcycleDelete">
       <Properties>
         <Property name="text" type="java.lang.String" value="Hapus"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonCarDeleteActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonMotorcycleDeleteActionPerformed"/>
       </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
@@ -275,7 +275,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTable" name="tableRental">
+        <Component class="javax.swing.JTable" name="tablePurchase">
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
               <Table columnCount="4" rowCount="0">
@@ -323,7 +323,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTable" name="tableCar">
+        <Component class="javax.swing.JTable" name="tableMotorcycle">
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
               <Table columnCount="4" rowCount="0">
@@ -371,7 +371,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTable" name="tableUser">
+        <Component class="javax.swing.JTable" name="tableCustomer">
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
               <Table columnCount="4" rowCount="0">
@@ -388,22 +388,22 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="buttonRentalDelete">
+    <Component class="javax.swing.JButton" name="buttonPurchaseDelete">
       <Properties>
         <Property name="text" type="java.lang.String" value="Hapus"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonRentalDeleteActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonPurchaseDeleteActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="buttonRentalView">
+    <Component class="javax.swing.JButton" name="buttonPurchaseView">
       <Properties>
         <Property name="text" type="java.lang.String" value="Lihat"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonRentalViewActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonPurchaseViewActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
