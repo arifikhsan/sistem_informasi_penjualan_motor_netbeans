@@ -12,6 +12,8 @@ import sh.now.filmon.penjualan_motor_netbeans.repository.contract.CustomerReposi
 import sh.now.filmon.penjualan_motor_netbeans.repository.contract.MotorcycleRepository;
 import sh.now.filmon.penjualan_motor_netbeans.repository.contract.PurchaseRepository;
 import sh.now.filmon.penjualan_motor_netbeans.screen.contract.ScreenInterface;
+import sh.now.filmon.penjualan_motor_netbeans.screen.customer.CustomerScreen;
+import sh.now.filmon.penjualan_motor_netbeans.screen.purchase.PurchaseScreen;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -359,33 +361,33 @@ public class DashboardScreen extends javax.swing.JFrame implements ScreenInterfa
     }// </editor-fold>//GEN-END:initComponents
 
     private void buttonPurchaseAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonPurchaseAddActionPerformed
-//        new PurchaseScreen().setVisible(true);
+        new PurchaseScreen().setVisible(true);
     }//GEN-LAST:event_buttonPurchaseAddActionPerformed
 
     private void refreshCustomerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshCustomerActionPerformed
-//        populateTableCustomer();
+        populateTableCustomer();
     }//GEN-LAST:event_refreshCustomerActionPerformed
 
     private void refreshMotorcycleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshMotorcycleActionPerformed
-//        populateTableMotorcycle();
+        populateTableMotorcycle();
     }//GEN-LAST:event_refreshMotorcycleActionPerformed
 
     private void buttonCustomerDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCustomerDeleteActionPerformed
         Integer customerId = Integer.parseInt(tableCustomer.getValueAt(tableCustomer.getSelectedRow(), 0).toString());
-//        int dialogResult = JOptionPane.showConfirmDialog(null, "Hapus?", "Peringatan", JOptionPane.YES_NO_OPTION);
-//        if (dialogResult == JOptionPane.YES_OPTION) {
-//            customerRepository.delete(customerId);
-//            populateTableCustomer();
-//        }
+        int dialogResult = JOptionPane.showConfirmDialog(null, "Hapus?", "Peringatan", JOptionPane.YES_NO_OPTION);
+        if (dialogResult == JOptionPane.YES_OPTION) {
+            customerRepository.delete(customerId);
+            populateTableCustomer();
+        }
     }//GEN-LAST:event_buttonCustomerDeleteActionPerformed
 
     private void refreshPurchaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshPurchaseActionPerformed
-//        populateTablePurchase();
+        populateTablePurchase();
     }//GEN-LAST:event_refreshPurchaseActionPerformed
 
     private void buttonCustomerViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCustomerViewActionPerformed
         Integer customerId = Integer.parseInt(tableCustomer.getValueAt(tableCustomer.getSelectedRow(), 0).toString());
-//        new CustomerScreen(customerId).setVisible(true);
+        new CustomerScreen(customerId).setVisible(true);
     }//GEN-LAST:event_buttonCustomerViewActionPerformed
 
     private void refreshAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshAllActionPerformed
@@ -393,7 +395,7 @@ public class DashboardScreen extends javax.swing.JFrame implements ScreenInterfa
     }//GEN-LAST:event_refreshAllActionPerformed
 
     private void buttonCustomerAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCustomerAddActionPerformed
-//        new CustomerScreen().setVisible(true);
+        new CustomerScreen().setVisible(true);
     }//GEN-LAST:event_buttonCustomerAddActionPerformed
 
     private void buttonExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonExitActionPerformed
