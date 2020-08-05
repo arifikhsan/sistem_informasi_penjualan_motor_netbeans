@@ -59,4 +59,14 @@ public class Motorcycle {
     public void setPrice(Integer price) {
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return "Motorcycle{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", policeNumber='" + policeNumber + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }
